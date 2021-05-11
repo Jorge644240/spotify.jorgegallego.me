@@ -2,7 +2,7 @@ const express = require("express");
 const spotifyWebApi = require("spotify-web-api-node");
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3000;
 
 app.use(express.static(`${__dirname}/static`));
 app.set("view engine", "pug");
