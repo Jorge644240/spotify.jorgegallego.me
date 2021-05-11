@@ -25,7 +25,7 @@ In the case that the intended result doesn't appear, the user can be redirected 
 
 ### Screenshot
 
-![](./initial.jpg)
+![](./Initial.jpg)
 
 ### Links
 
