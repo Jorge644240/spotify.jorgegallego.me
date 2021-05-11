@@ -44,7 +44,7 @@ This web application was built with the following tools:
 - [Node.js](https://nodejs.org/en/)
 - [Express.js](https://expressjs.com/)
 
-The app was also deployed on [Heroku](https://heroku.com).
+The app was also deployed to [Heroku](https://heroku.com).
 
 ## Author
 
