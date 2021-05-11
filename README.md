@@ -41,6 +41,10 @@ This web application was built with the following tools:
 - Semantic HTML5 & CSS3
 - [Vue.js v3](https://v3.vuejs.org/) - JavaScript Framework
 - [Spotify API](https://developer.spotify.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Express.js](https://expressjs.com/)
+
+The app was also deployed on [Heroku](https://heroku.com).
 
 ## Author
 
