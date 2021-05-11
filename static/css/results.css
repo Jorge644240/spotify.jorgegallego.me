@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lexend&family=Exo&family=Roboto Slab&display=swap');
+*, ::before, ::after
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    background-color: #191414;
+    color: #FFFFFF;
+    position: relative;
+}
+body > p
+{
+    font-family: 'Montserrat';
+    text-align: center;
+}
+h1
+{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    margin: 4%;
+    font-weight: 700;
+}
+h2
+{
+    text-align: center;
+    font-family: 'Exo';
+    font-size: 1.8rem;
+    margin: 1% auto;
+}
+#results
+{
+    text-align: center;
+}
+.result, #top
+{
+    display: inline-block;
+    width: 50%;
+    margin: 3%;
+    padding: 3%;
+    border: 1px solid #AAAAAA;
+    border-radius: 30px;
+    box-shadow: 0 0 1.5rem #AAAAAA;
+    transition: all 0.5s;
+}
+[data-aos^=fade][data-aos^=fade].aos-animate:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem #AAAAAA;
+}
+#top
+{
+    margin-top: 0;
+}
+#results div img
+{
+    border-radius: 30px;
+    box-shadow: 0 0 0.5rem #676767;
+    margin: 3%;
+    transition: all 0.2s ease-out;
+}
+#results div img:hover
+{
+    box-shadow: 0 0 0.5rem #AAAAAA;
+}
+.result p, #top p
+{
+    margin: 0.5rem auto 0;
+    font-family: 'Lexend';
+    font-size: 1.2rem;
+}
+#results a
+{
+    color: inherit;
+}
+audio
+{
+    max-width: 90%;
+    margin: 0 auto;
+}
+section + p
+{
+    text-align: center;
+    font-family: 'Roboto Slab';
+}
+section + p a
+{
+    color: inherit;
+}
+@media screen and (max-width: 772px)
+{
+    .result, #top
+    {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 350px)
+{
+    h1
+    {
+        font-size: 2rem;
+    }
+    h2
+    {
+        font-size: 1.3rem;
+    }
+    #results div p
+    {
+        font-size: 1rem;
+    }
+    .result, #top
+    {
+        margin: 10% auto;
+        padding: 10% 0;
+    }
+    audio
+    {
+        max-width: 80%;
+    }
+    #results div img
+    {
+        border-radius: 5px;
+    }
+}

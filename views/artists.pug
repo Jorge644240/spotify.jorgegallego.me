@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jorge Gallego">
+        <meta name="title" content="Spotify Web Search">
+        <meta name="description" content="Spotify Web Search - Browse the extensive Spotify music database from your browser. Search for artists and/or songs, listen to previews and visit Spotify artist profiles or play songs on the app.">
+        <meta name="keywords" content="Spotify, music, artists, Spotify Web Search, songs, previews, music database">
+        title="Search results for "+artist+" - Spotify Web Search"
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="css/results.css">
+        <link rel="icon" type="image/png" href=" /favicon.ico">
+    </head>
+    <body>
+        h1="Search results for "+artist
+        <section id="results">
+            <div id="top">
+                h2=data.name
+                a(href=data.uri)
+                    img(src=data.image)
+                <p>Open on 
+                    a(href=data.uri) Spotify
+                </p>
+            </div>
+        </section>
+        <p>Didn't find what you were looking for? Try 
+            a(href=`https://google.com/search?q=${artist}+artist`) Google
+        </p>
+    </body>
+</html>

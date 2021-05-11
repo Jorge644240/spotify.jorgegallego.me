@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Syne&family=Spartan&display=swap');
+body
+{
+    margin: 0;
+    background-color: #191414;
+    color: #FFFFFF;
+}
+body > p
+{
+    font-family: 'Montserrat';
+    text-align: center;
+}
+body > p
+{
+    margin: 0;
+    padding: 1% 0;
+    background-color: #AAAAAA;
+    color: #000000;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

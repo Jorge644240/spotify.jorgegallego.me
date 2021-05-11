@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jorge Gallego">
+        <meta name="title" content="Spotify Web Search">
+        <meta name="description" content="Spotify Web Search - Browse the extensive Spotify music database from your browser. Search for artists and/or songs, listen to previews and visit Spotify artist profiles or play songs on the app.">
+        <meta name="keywords" content="Spotify, music, artists, Spotify Web Search, songs, previews, music database">
+        title="Search results for "+song+" - Spotify Web Search"
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="css/results.css">
+        <link rel="stylesheet" href="css/songs.css">
+        <link rel="icon" type="image/png" href=" /favicon.ico">
+    </head>
+    <body>
+        h1="Search results for "+song
+        <section id="results">
+            <div id="top">
+                h2=data[0].name
+                <p>
+                    a(href=data[0].artistUri)=data[0].artist
+                </p>
+                a(href=data[0].uri)
+                    img(src=data[0].image, alt=`${data[0].name} by ${data[0].artist}`)
+                if data[0].previewUrl
+                    <br>
+                    audio(src=data[0].previewUrl, controls) 
+                <p>Open on 
+                    a(href=data[0].uri) Spotify
+                </p>
+            </div>
+            <div class="result">
+                h2=data[1].name
+                <p>
+                    a(href=data[1].artistUri)=data[1].artist
+                </p>
+                a(href=data[1].uri)
+                    img(src=data[1].image, alt=`${data[1].name} by ${data[1].artist}`)
+                if data[1].previewUrl
+                    <br>
+                    audio(src=data[1].previewUrl, controls) 
+                <p>Open on 
+                    a(href=data[1].uri) Spotify
+                </p>
+            </div>
+            <div class="result">
+                h2=data[2].name
+                <p>
+                    a(href=data[2].artistUri)=data[2].artist
+                </p>
+                a(href=data[2].uri)
+                    img(src=data[2].image, alt=`${data[2].name} by ${data[2].artist}`)
+                if data[2].previewUrl
+                    <br>
+                    audio(src=data[2].previewUrl, controls) 
+                <p>Open on 
+                    a(href=data[2].uri) Spotify
+                </p>
+            </div>
+            <div class="result">
+                h2=data[3].name
+                <p>
+                    a(href=data[3].artistUri)=data[3].artist
+                </p>
+                a(href=data[3].uri)
+                    img(src=data[3].image, alt=`${data[3].name} by ${data[3].artist}`)
+                if data[3].previewUrl
+                    <br>
+                    audio(src=data[3].previewUrl, controls) 
+                <p>Open on 
+                    a(href=data[3].uri) Spotify
+                </p>
+            </div>
+            <div class="result">
+                h2=data[4].name
+                <p>
+                    a(href=data[4].artistUri)=data[4].artist
+                </p>
+                a(href=data[4].uri)
+                    img(src=data[4].image, alt=`${data[4].name} by ${data[4].artist}`)
+                if data[4].previewUrl
+                    <br>
+                    audio(src=data[4].previewUrl, controls) 
+                <p>Open on 
+                    a(href=data[4].uri) Spotify
+                </p>
+            </div>
+        </section>
+        <p>Didn't find what you were looking for? Try 
+            a(href=`https://google.com/search?q=${song}&tbm=vid`) Google
+        </p>
+        <script src="js/songs.js"></script>
+    </body>
+</html>

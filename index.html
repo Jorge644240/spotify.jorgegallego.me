@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jorge Gallego">
+        <meta name="title" content="Spotify Web Search">
+        <meta name="description" content="Spotify Web Search - Browse the extensive Spotify music database from your browser. Search for artists and/or songs, listen to previews and visit Spotify artist profiles or play songs on the app.">
+        <meta name="keywords" content="Spotify, music, artists, Spotify Web Search, songs, previews, music database">
+        <title>Spotify Web Search</title>
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <section id="search">
+            <h1>Spotify Web Search</h1>
+            <h2>Browse the extensive Spotify music database from your browser</h2>
+            <p>Search by</p>
+            <form action="/results">
+                <p>
+                    <span :class="{clicked: song}" @click="searchBySong">Song</span>
+                    <span :class="{clicked: artist}" @click="searchByArtist">Artist</span>
+                </p>
+                <input type="text" name="song" v-if="song" :required="song" placeholder="Song name">
+                <input type="text" name="artist" v-if="artist" :required="artist" placeholder="Artist name">
+                <br>
+                <button :disabled="submit" :title="submitTitle">Search</button>
+            </form>
+        </section>
+        <p>&copy; Jorge Gallego, 2021<span id="year"></span></p>
+        <script src="js/index.js"></script>
+        <script src="js/year.js"></script>
+    </body>
+</html>

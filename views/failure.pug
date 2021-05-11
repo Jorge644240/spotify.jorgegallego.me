@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jorge Gallego">
+        <meta name="title" content="Spotify Web Search">
+        <meta name="description" content="Spotify Web Search - Browse the extensive Spotify music database from your browser. Search for artists and/or songs, listen to previews and visit Spotify artist profiles or play songs on the app.">
+        <meta name="keywords" content="Spotify, music, artists, Spotify Web Search, songs, previews, music database">
+        if artist && song 
+            title="Search results for "+song+" by "+artist+" - Spotify Web Search"
+        else if artist 
+            title="Search results for "+artist+" - Spotify Web Search"
+        else if song 
+            title="Search results for "+song+" - Spotify Web Search"
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/failure.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+    </head>
+    <body>
+        <h1>We're sorry</h1>
+        <h2>Spotify didn't return any result for your search</h2>
+        <p>Try 
+            if artist && song
+                a(href=`https://google.com/search?q=${song}+${artist}`) Google
+            else if artist
+                a(href=`https://google.com/search?q=${artist}`) Google
+            else if song
+                a(href=`https://google.com/search?q=${song}`) Google
+        </p>
+    </body>
+</html>
