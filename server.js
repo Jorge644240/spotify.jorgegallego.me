@@ -13,8 +13,8 @@ app.get("/", (req, res) => {
 
 app.get("/results", (req, res) => {
     let spotifyApi = new spotifyWebApi({
-        clientId: 'a553526c85c44cdc8014afc63da0891a',
-        clientSecret: '2805f74937134f028fbfad4dc9952c56',
+        clientId: /* Client ID */'',
+        clientSecret: /* Client Secret */'',
         redirectUri: 'https://example.com/callback',
     });
     spotifyApi.clientCredentialsGrant()
