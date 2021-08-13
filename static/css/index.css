@@ -91,6 +91,7 @@ button:disabled
     #search p
     {
         font-size: 1.2rem;
+        margin-bottom: 2%;
     }
 }
 @media screen and (max-width: 400px)
@@ -106,5 +107,6 @@ button:disabled
     #search p
     {
         font-size: 1rem;
+        margin-bottom: 3%;
     }
 }
