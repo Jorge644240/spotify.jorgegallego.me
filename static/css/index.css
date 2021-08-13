@@ -78,3 +78,33 @@ button:disabled
     color: #AAAAAA;
     cursor: not-allowed;
 }
+@media screen and (max-width: 700px)
+{
+    h1
+    {
+        font-size: 2.5rem;
+    }
+    h2
+    {
+        font-size: 1.5rem;
+    }
+    #search p
+    {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    h1
+    {
+        font-size: 2rem;
+    }
+    h2
+    {
+        font-size: 1.2rem;
+    }
+    #search p
+    {
+        font-size: 1rem;
+    }
+}
