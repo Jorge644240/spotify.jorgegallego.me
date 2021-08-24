@@ -1,5 +1,6 @@
 const express = require("express");
 const spotifyWebApi = require("spotify-web-api-node");
+const path = require("path");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -110,6 +111,14 @@ app.get("/results", (req, res) => {
             }
         }
     );
+});
+
+app.all("/robots.txt", (req, res) => {
+    res.sendFile(path.join(__dirname, "robots.txt"));
+});
+
+app.all("/sitemap.xml", (req, res) => {
+    res.sendFile(path.join(__dirname, "sitemap.xml"));
 });
 
 app.listen(port, () => {
