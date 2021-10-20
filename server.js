@@ -1,6 +1,7 @@
 const express = require("express");
 const spotifyWebApi = require("spotify-web-api-node");
 const path = require("path");
+require("dotenv").config();
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -14,8 +15,8 @@ app.get("/", (req, res) => {
 
 app.get("/results", (req, res) => {
     let spotifyApi = new spotifyWebApi({
-        clientId: 'a553526c85c44cdc8014afc63da0891a',
-        clientSecret: '2805f74937134f028fbfad4dc9952c56',
+        clientId: process.env.CLIENT_ID,
+        clientSecret:  process.env.CLIENT_SECRET,
         redirectUri: 'https://example.com/callback',
     });
     spotifyApi.clientCredentialsGrant()
