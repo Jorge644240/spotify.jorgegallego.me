@@ -4,7 +4,7 @@ const path = require("path");
 require("dotenv").config();
 
 const app = express();
-const port = 3001;
+const port = 3010;
 
 app.use(express.static(`${__dirname}/static`));
 app.set("view engine", "pug");
